@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>LCEDA-Step-Downloader-Setup</AssemblyName>
+    <RootNamespace>LCEDA.StepDownloader.Installer</RootNamespace>
+    <ApplicationIcon>..\lceda_step_downloader\logo256.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Payload\payload.zip" LogicalName="payload.zip" />
+    <Content Include="..\lceda_step_downloader\logo256.ico" Link="logo256.ico" />
+  </ItemGroup>
+</Project>
